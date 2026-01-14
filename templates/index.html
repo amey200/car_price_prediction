@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚗 Car Price Prediction</h1>
+
+    <input type="number" id="year" placeholder="Year">
+    <input type="number" id="price" placeholder="Present Price (Lakhs)">
+    <input type="number" id="kms" placeholder="Kilometers Driven">
+
+    <select id="fuel">
+        <option value="0">Petrol</option>
+        <option value="1">Diesel</option>
+        <option value="2">CNG</option>
+    </select>
+
+    <select id="seller">
+        <option value="0">Dealer</option>
+        <option value="1">Individual</option>
+    </select>
+
+    <select id="transmission">
+        <option value="0">Manual</option>
+        <option value="1">Automatic</option>
+    </select>
+
+    <input type="number" id="owner" placeholder="No of Owners">
+
+    <button onclick="predictPrice()">Predict Price</button>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
